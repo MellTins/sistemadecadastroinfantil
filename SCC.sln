@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sistemadecadastroinfantil", "sistemadecadastroinfantil.csproj", "{A26BD880-993E-45D9-9887-BB92652478B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCC", "SCC.csproj", "{A26BD880-993E-45D9-9887-BB92652478B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
