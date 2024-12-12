@@ -15,7 +15,8 @@ gerar relatório em excel
 considerar as responsabilidades das classes
 */
 using SCC.cadastro;
-var cadastro = new Cadastro();
+using SCC.Entidades;
+var crianca = new Crianca();
 var editarcad = new EditarCad();
 var sair = false;
 Console.WriteLine("Olá, bem vindo ao sistema de Cadastro");
@@ -47,7 +48,7 @@ do
             Console.WriteLine(criancaEditado);
             break;
         case "c":
-            cadastro.ExibirCadastro();
+            crianca.ExibirCadastro();
             Voltar();
             break;
         case "d":
@@ -100,7 +101,7 @@ void Cadastramento()
     var cidade = Console.ReadLine();
     Console.WriteLine("Estado onde nasceu");
     var estado = Console.ReadLine();
-    cadastro.AddCadastro(nome,sobrenome,dataNasc, nomePai, nomeMae, RG, cidade, estado);
+    crianca.Adicionar(nome,sobrenome,dataNasc, nomePai, nomeMae, RG, cidade, estado);
     Console.WriteLine("Cadastro concluído!");
 }
 
@@ -138,7 +139,7 @@ void EditarCadastro(string RG)
     var cidade = Console.ReadLine();
     Console.WriteLine("Estado onde nasceu");
     var estado = Console.ReadLine();
-    cadastro.AddCadastro(nome, sobrenome, dataNasc, nomePai, nomeMae, RG, cidade, estado);
+    crianca.Adicionar(nome, sobrenome, dataNasc, nomePai, nomeMae, RG, cidade, estado);
     Console.WriteLine("Cadastro concluído!");
 }
     void Voltar()

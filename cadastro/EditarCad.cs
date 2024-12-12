@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SCC.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,13 +9,13 @@ namespace SCC.cadastro
 {
     public class EditarCad
     {
-        public List<Cadastro> Cadastros { get; set; } = new List<Cadastro>();
+        public List<Crianca> Cadastros { get; set; } = new List<Crianca>();
 
         public string LogarCad(string rg)
         {
-            var crianca = Cadastros.Where(item => item.RG == rg).FirstOrDefault();
+            var cadastrocri = Cadastros.Where(item => item.RG == rg).FirstOrDefault();
 
-            return $"Primeiro nome:{crianca.Nome} | Sobrenome: {crianca.Sobrenome} |Data de Nascimento: {crianca.DataNasc}| Nome do Pai:{crianca.NomePai} | Nome da Mãe:{crianca.NomeMae} | Rg da criança:{crianca.RG} | Cidade em que nasceu: {crianca.Cidade} | Estado em que nasceu:{crianca.Estado}";
+            return $"Primeiro nome:{cadastrocri.Nome} | Sobrenome: {cadastrocri.Sobrenome} |Data de Nascimento: {cadastrocri.DataNasc}| Nome do Pai:{cadastrocri.NomePai} | Nome da Mãe:{cadastrocri.NomeMae} | Rg da criança:{cadastrocri.RG} | Cidade em que nasceu: {cadastrocri.Cidade} | Estado em que nasceu:{cadastrocri.Estado}";
         }
 
         public void EditarCadastro(string nome, string sobrenome, DateTime datanasc, string nomepai, string nomemae, string rg, string cidade, string estado)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SCC.cadastro
 {
-    public class Cadastro
+   /* public class Cadastro
     {
         public string Nome {  get; set; }
         public string Sobrenome { get; set; }
@@ -50,7 +50,7 @@ namespace SCC.cadastro
             var idade = data.Year - DataNasc.Year;
             return $"Idade: {idade}";
         }
-    }
+    }*/
 
    
 
